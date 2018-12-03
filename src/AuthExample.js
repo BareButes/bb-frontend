@@ -1,5 +1,5 @@
 // AuthExample.js
-
+import "./login.css"
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -138,12 +138,41 @@ class Login extends React.Component {
 
     if (redirectToReferrer) return <Redirect to={from} />;
 
-    return (
-      <div>
-        <p>You must log in to view the page at {from.pathname}</p>
-        <input type="text" placeholder="Email" value={this.state.email} onChange={this.emailChanged} />
-        <input type="text" placeholder="Password" value={this.state.password} onChange={this.passwordChanged} />
-        <button onClick={this.login}>Log in</button>
+       return (
+     <div className="limiter">
+        <div className="container-login100">
+          <div className="wrap-login100 p-t-85 p-b-20">
+            <form className="login100-form validate-form">
+              <span className="login100-form-title p-b-70">
+                BareButes
+              </span>
+              <span className="login100-form-title p-b-70">
+                Just the 'butes
+              </span>
+
+             <div className="wrap-input100 validate-input m-t-85 m-b-35" >
+                <input type="text" className="input100"  value={this.state.email} onChange={this.emailChanged} />
+
+                <span className="focus-input100" ></span>
+              </div>
+
+             <div className="wrap-input100 validate-input m-b-50" >
+                <input type = "text" className="input100"   value={this.state.password} onChange={this.passwordChanged}/>
+                <span className="focus-input100" ></span>
+              </div>
+
+              <div className="container-login100-form-btn">
+                <button className="login100-form-btn" onClick={this.login} >Login</button>
+              </div>
+              <div className="container-login100-form-btn">
+                <button className="login100-form-btn">
+                 Sign Up
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
       </div>
     );
   }
