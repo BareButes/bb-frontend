@@ -1,7 +1,9 @@
 {
-  "name": "auth-example",
+  "name": "barebutes-front",
   "version": "0.1.0",
-  "private": true,
+  "description": "Frontend of the BareButes collaboration platform",
+  "main": "src/index.js",
+  "private": false,
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -23,5 +25,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "http://localhost:8000"
+  "proxy": "http://localhost:8000",
+  "author": "Iftikhar Khan, Lily Caplan, Daniel Segarra",
+  "license": "ISC"
 }
