@@ -147,7 +147,7 @@ class Login extends React.Component {
                 BareButes
               </span>
               <span className="login100-form-title p-b-70">
-                Just the 'butes
+                Just the &#39;butes
               </span>
 
              <div className="wrap-input100 validate-input m-t-85 m-b-35" >
